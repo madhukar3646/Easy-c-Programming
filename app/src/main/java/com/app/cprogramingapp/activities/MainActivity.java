@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -23,8 +24,12 @@ import android.widget.Toast;
 
 import com.app.cprogramingapp.R;
 import com.app.cprogramingapp.Utils.ConnectionDetector;
+import com.app.cprogramingapp.Utils.RetrofitApis;
 import com.app.cprogramingapp.Utils.Utils;
+import com.app.cprogramingapp.adapters.AppsParkAdsAdapter;
 import com.app.cprogramingapp.adapters.TitlesListAdapter;
+import com.app.cprogramingapp.models.App;
+import com.app.cprogramingapp.models.PlaystoreappslistingResponse;
 import com.app.cprogramingapp.models.TitlesModel;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -38,8 +43,11 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements TitlesListAdapter.TitleClickListener{
+public class MainActivity extends AppCompatActivity implements TitlesListAdapter.TitleClickListener,AppsParkAdsAdapter.OnAppClickListener{
 
     @BindView(R.id.recyclerview_titles)
     RecyclerView recyclerView;
@@ -55,6 +63,11 @@ public class MainActivity extends AppCompatActivity implements TitlesListAdapter
     private boolean isInternetPresent = false;
     private AdView adView;
 
+    private RelativeLayout more_apps_lay_out;
+    private RecyclerView more_app_recycler_view;
+    private Dialog dialog;
+    private AppsParkAdsAdapter appsParkAdsAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +80,18 @@ public class MainActivity extends AppCompatActivity implements TitlesListAdapter
     {
         cd = new ConnectionDetector(getApplicationContext());
         isInternetPresent = cd.isConnectingToInternet();
+
+        dialog = new Dialog(this,
+                android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
+        dialog.setContentView(R.layout.servicecall_loading);
+        dialog.setCancelable(false);
+
+        more_apps_lay_out=(RelativeLayout)findViewById(R.id.more_apps_lay_out);
+        more_apps_lay_out.setVisibility(View.GONE);
+        more_app_recycler_view=(RecyclerView)findViewById(R.id.more_app_recycler_view);
+        more_app_recycler_view.setNestedScrollingEnabled(false);
+        more_app_recycler_view.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -92,7 +117,38 @@ public class MainActivity extends AppCompatActivity implements TitlesListAdapter
 
         if (isInternetPresent) {
             displayAd();
+            getPlaystoreApps();
         }
+    }
+
+
+    public void getPlaystoreApps(){
+        Call<PlaystoreappslistingResponse> call= RetrofitApis.Factory.create(MainActivity.this).getAppsList();
+        dialog.show();
+        call.enqueue(new Callback<PlaystoreappslistingResponse>() {
+            @Override
+            public void onResponse(Call<PlaystoreappslistingResponse> call, Response<PlaystoreappslistingResponse> response) {
+                if(dialog!=null)
+                    dialog.dismiss();
+                if(response.isSuccessful()){
+                    PlaystoreappslistingResponse playstoreappslistingResponse=response.body();
+                    if(playstoreappslistingResponse!=null)
+                    {
+                        List<App> appslist=playstoreappslistingResponse.getApps();
+                        appsParkAdsAdapter=new AppsParkAdsAdapter(MainActivity.this,appslist);
+                        appsParkAdsAdapter.setOnAppClickListener(MainActivity.this);
+                        more_app_recycler_view.setAdapter(appsParkAdsAdapter);
+                        more_apps_lay_out.setVisibility(View.VISIBLE);
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<PlaystoreappslistingResponse> call, Throwable t) {
+                if(dialog!=null)
+                    dialog.dismiss();
+            }
+        });
     }
 
     @Override
@@ -274,5 +330,10 @@ public class MainActivity extends AppCompatActivity implements TitlesListAdapter
         }
 
         super.onDestroy();
+    }
+
+    @Override
+    public void onAppClick(App app) {
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(app.getAppurl())));
     }
 }

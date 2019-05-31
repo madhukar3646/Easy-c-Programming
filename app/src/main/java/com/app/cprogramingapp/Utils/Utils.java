@@ -7,6 +7,7 @@ import java.io.InputStream;
 
 public class Utils {
 
+    public static final String BASE_URL="https://raw.githubusercontent.com/madhukar3646/myplaystoreappslisting/master/";
     public static String getStringFromFile(Context context,int id)
     {
         InputStream inputStream = context.getResources().openRawResource(id);

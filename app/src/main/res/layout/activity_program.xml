@@ -181,6 +181,38 @@
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/more_apps_lay_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/recyclerview_titles"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="More Free Apps[Ad]"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:gravity="center"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/more_app_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_ads"
+                    android:layout_marginTop="10dp"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

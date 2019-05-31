@@ -1,7 +1,12 @@
 package com.app.cprogramingapp.activities;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -10,14 +15,23 @@ import android.widget.TextView;
 
 import com.app.cprogramingapp.R;
 import com.app.cprogramingapp.Utils.ConnectionDetector;
+import com.app.cprogramingapp.Utils.RetrofitApis;
 import com.app.cprogramingapp.Utils.Utils;
+import com.app.cprogramingapp.adapters.AppsParkAdsAdapter;
+import com.app.cprogramingapp.models.App;
+import com.app.cprogramingapp.models.PlaystoreappslistingResponse;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
-public class ExplainationActivity extends AppCompatActivity {
+public class ExplainationActivity extends AppCompatActivity implements AppsParkAdsAdapter.OnAppClickListener{
 
     @BindView(R.id.tv_explaination)
     TextView tv_explaination;
@@ -28,6 +42,11 @@ public class ExplainationActivity extends AppCompatActivity {
     private ConnectionDetector cd;
     private boolean isInternetPresent = false;
     private AdView adView;
+
+    private RelativeLayout more_apps_lay_out;
+    private RecyclerView more_app_recycler_view;
+    private Dialog dialog;
+    private AppsParkAdsAdapter appsParkAdsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +60,17 @@ public class ExplainationActivity extends AppCompatActivity {
     {
         cd = new ConnectionDetector(getApplicationContext());
         isInternetPresent = cd.isConnectingToInternet();
+
+        dialog = new Dialog(this,
+                android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
+        dialog.setContentView(R.layout.servicecall_loading);
+        dialog.setCancelable(false);
+
+        more_apps_lay_out=(RelativeLayout)findViewById(R.id.more_apps_lay_out);
+        more_apps_lay_out.setVisibility(View.GONE);
+        more_app_recycler_view=(RecyclerView)findViewById(R.id.more_app_recycler_view);
+        more_app_recycler_view.setNestedScrollingEnabled(false);
+        more_app_recycler_view.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -59,7 +89,37 @@ public class ExplainationActivity extends AppCompatActivity {
 
         if (isInternetPresent) {
             displayAd();
+            getPlaystoreApps();
         }
+    }
+
+    public void getPlaystoreApps(){
+        Call<PlaystoreappslistingResponse> call= RetrofitApis.Factory.create(ExplainationActivity.this).getAppsList();
+        dialog.show();
+        call.enqueue(new Callback<PlaystoreappslistingResponse>() {
+            @Override
+            public void onResponse(Call<PlaystoreappslistingResponse> call, Response<PlaystoreappslistingResponse> response) {
+                if(dialog!=null)
+                    dialog.dismiss();
+                if(response.isSuccessful()){
+                    PlaystoreappslistingResponse playstoreappslistingResponse=response.body();
+                    if(playstoreappslistingResponse!=null)
+                    {
+                        List<App> appslist=playstoreappslistingResponse.getApps();
+                        appsParkAdsAdapter=new AppsParkAdsAdapter(ExplainationActivity.this,appslist);
+                        appsParkAdsAdapter.setOnAppClickListener(ExplainationActivity.this);
+                        more_app_recycler_view.setAdapter(appsParkAdsAdapter);
+                        more_apps_lay_out.setVisibility(View.VISIBLE);
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<PlaystoreappslistingResponse> call, Throwable t) {
+                if(dialog!=null)
+                    dialog.dismiss();
+            }
+        });
     }
 
     private void displayAd() {
@@ -105,5 +165,10 @@ public class ExplainationActivity extends AppCompatActivity {
         }
 
         super.onDestroy();
+    }
+
+    @Override
+    public void onAppClick(App app) {
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(app.getAppurl())));
     }
 }
