@@ -1,0 +1,1 @@
+sum of first 5 numbers is 10

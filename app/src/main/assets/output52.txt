@@ -1,0 +1,3 @@
+local variable b is 20 
+global variable a is 10 
+global variable b is 5

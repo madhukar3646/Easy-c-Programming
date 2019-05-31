@@ -1,0 +1,10 @@
+--> if(i%2==0)
+ // if it is true then the i value will be an even number.
+--> i=1 1<=10 ==> 1%2==0 false i++ ==> i=2
+--> i=2 2<=10 ==> 2%2==0 true  i++ ==> i=3
+--> i=3 3<=10 ==> 3%2==0 false i++ ==> i=4
+--> i=4 4<=10 ==> 4%2==0 true  i++ ==> i=5
+--> like this iterations will execute
+--> i=10 10<=10==> 10%2==0 true i++ ==> i=11
+--> at interation i=11 ==> 11<=11 false ==> loop completed
+--> Even numbers from 1 to 10 are 2 4 6 8 10

@@ -1,0 +1,14 @@
+enter how many number of rows and columns you want?
+3
+2
+insert array values..
+1
+9
+2
+8
+3
+6
+2d array values are....
+1 9
+2 8
+3 6

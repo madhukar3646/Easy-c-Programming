@@ -1,0 +1,40 @@
+--> 3 digit armstrong 153 = 1*1*1 + 5*5*5 + 3*3*3
+--> 4 digit armstrong 1634 = 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4
+--> int number, temp, remainder, result = 0, no_of_digits= 0;
+--> Enter a three digit integer: 1634
+--> number=1634 
+--> temp = number;//temp=1634
+
+--> while (temp != 0) // 1634!=0
+--> temp =temp/10; ==> temp=1634/10 ==> temp=163
+--> no_of_digits++; ==> no_of_digits=0+1 
+--> no_of_digits=4 to the end of this loop.  
+--> temp = number;//temp=1634
+
+--> while (temp != 0) // 1634!=0 true 
+--> remainder = 1634%10  ==> remainder=4
+--> result = 0+pow(4,4) ==> result=256    
+--> temp=temp/10;
+ // temp=1634/10 // temp=163
+
+--> while (temp != 0) // 163!=0 true
+--> remainder = 163%10;==> remainder=3
+--> result = 256+pow(3,4) ==> result=337   
+--> temp=temp/10;
+ // temp=163/10 // temp=16
+
+--> while (temp != 0) // 16!=0 true
+--> remainder = 16%10;==> remainder=6
+--> result = 337+pow(6,4) ==> result=1633   
+--> temp=temp/10;
+ // temp=16/10 // temp=1
+
+--> while (temp != 0) // 1!=0 true
+--> remainder = 1%10;==> remainder=1
+--> result = 1633+pow(1,4) ==> result=1634   
+--> temp=temp/10;
+ // temp=1/10 // temp=0
+
+--> while (temp != 0) // 0!=0 false
+--> if(result == number) // 1634==1634 true
+--> 1634 is an Armstrong number.

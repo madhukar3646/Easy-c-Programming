@@ -1,0 +1,7 @@
+--> printf function is a predefined function.
+--> it means this function is already defined in c compiler and it will take a string parameter.
+--> In c standard input and output functions are printf() and scanf(). These functions have already defined in stdio.h libraury.
+--> To use these input and output functions in our program we have to write #include<stdio.h> statement before main().
+--> printf("String parameter") // whatever string we will pass to this printf function that will be print on the console screen.
+--> in our program we have passed "Hello world" as a string parameter.
+--> the output on the console screen will be Hello World.

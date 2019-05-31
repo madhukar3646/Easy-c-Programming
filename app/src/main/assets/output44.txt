@@ -1,0 +1,12 @@
+enter lenght of a string 
+8
+enter 8 charecters
+c
+o
+o
+c
+k
+i
+n
+g
+Result string is kookking

@@ -1,0 +1,8 @@
+--> int a[]={10,11,12,13,14};//array
+--> at i=0 ==> if(a[0]==12) ==> if(10==12) is false
+--> at i=2 ==> if(a[2]==12) ==> if(12==12) is true
+--> so statement a[i]=15; will be execute.
+--> a[i]=15; ==> a[2]=15 will be assaigned.
+--> like this way loop will be complete.
+--> To print array elements we need to use indexes so we need to use for loop or while loop.
+--> finally the output 10 11 15 13 14 values will be print inside for loop iterations.

@@ -1,0 +1,14 @@
+--> char str1[]="how are you",str2[100],str3[100]; //intialization and declaration
+--> int str1_length,count=0;
+--> str1_length=strlen(str1) ==> str1_length=11
+--> str2[str1_length]; ==> char array str2 is declared with length 11
+--> i=0 ==> char ch=str1[0] ==> ch='h'
+--> str2[0]=ch ==> str2[0]='h' ==> count=0+1;
+--> i=1 ==> char ch=str1[1] ==> ch='o'
+--> str2[1]=ch ==> str2[1]='o' ==> count=1+1;
+--> like this for loop iterations will be execute.
+--> at i=10 ==> char ch=str1[10] ==> ch='u'
+--> str2[10]=ch ==> str2[10]='u' ==> count=10+1;
+--> i=11 i<11 false loop will be terminate.
+--> str2 string will be copied with str1 string.
+--> strncpy(str3,str1,str1_length); //strncpy is the predefined method to copy a string in to another string.

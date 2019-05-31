@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+main()
+
+{
+   
+  int length;
+  printf("enter how many number of values you want\n");
+
+  scanf("%d",&length);
+  
+int a[length];
+
+  printf("enter %d values \n",length);
+
+  for(int i=0;i<length;i++)
+
+    scanf("%d",&a[i]);
+   
+  printf("printing array elements...\n");
+  for(int i=0;i<length;i++)
+
+    printf(" %d",a[i]);
+
+}

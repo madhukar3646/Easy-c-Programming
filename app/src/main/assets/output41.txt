@@ -1,0 +1,4 @@
+how are you 
+howareyou 
+length of the str1 is 11 
+length of the str2 is 9

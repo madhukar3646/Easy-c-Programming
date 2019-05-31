@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+main()
+
+{
+   
+  int i=0;
+  
+do
+  {
+       
+    printf("\n number %d",i);
+
+    i++;
+  
+}while(i<5);
+}

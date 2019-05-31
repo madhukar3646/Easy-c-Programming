@@ -1,0 +1,5 @@
+--> We have many number of predefined math functions available in c language.
+--> To use mathematical functions we need to declare #include<math.h>
+ header.
+--> math.h is a libraury. Mathematical functions implemented in this libraury.
+--> printf() and scanf() functions are implemented in stdio.h libraury.

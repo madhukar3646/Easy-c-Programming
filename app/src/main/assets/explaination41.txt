@@ -1,0 +1,6 @@
+--> char str1[]="how are you"; //String intialization
+--> char str2[]={'h','o','w','a','r','e','y','o','u','\0'}; //String another type of intialization
+--> '\0'(null charecter) represents end of the string.
+--> Strings are charecter arrays.
+--> printf("%s \n",str1); // %s is the access specifier for a string.
+--> strlen() is a predefined function is used to get the length of a string or length of a charecter array.

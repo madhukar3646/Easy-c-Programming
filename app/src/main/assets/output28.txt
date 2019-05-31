@@ -1,0 +1,2 @@
+Enter an interger number: 789
+Reverse of 789 Number is = 987

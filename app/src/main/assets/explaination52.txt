@@ -1,0 +1,6 @@
+--> int a=10;
+ ==> this is declared above the main method we can call it as a global variable.
+--> So we can access variable a inside main method and also inside userdefined functions.
+--> int b=5; ==> this is declared inside main method so this will be accessable only with in the main method. This is the local variable. It is local to the main.
+--> 
+int b=20; ==> this is declared inside test() method so this will be accessable only with in the test() method. This is the local variable. It is local to the test().

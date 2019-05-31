@@ -1,0 +1,11 @@
+--> 
+int sum(int a,int b);
+ ==> it is a function prototype.
+--> Here int sum(int a,int b) is a method written below the main method.
+--> 
+int sum(int a,int b) ==> This function return type is integer this method will return one integer value and it is expecting two integer values.
+--> 
+result=sum(20,20); ==> here sum method will be return one integer value and it will be store in result variable.
+--> int sum(int a,int b) ==> a=20 and b=20 will be store and function will be return value 40.
+--> Then printf will be print the result 
+--> the result is 40

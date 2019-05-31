@@ -1,0 +1,1 @@
+sum of c,d is 30

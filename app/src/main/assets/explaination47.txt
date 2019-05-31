@@ -1,0 +1,9 @@
+--> int a=99,b=0;
+--> char ch1,ch2='s';
+--> ch1=a; ==> ch1=99 ==> here 99 is an integer.
+--> But we are assigning integer value to ch1 charecter variable.
+--> 99 ascii code charecter is 'c' so internally it will convert and store in ch1.
+--> b=ch2; here b is an integer variable 
+--> b='s' ==> s ascii code is 115 so it will convert and store in b.
+--> ch1 value is c 
+--> b value is 115 

@@ -1,0 +1,8 @@
+--> int age; //age=0;
+--> input given 22
+--> age=22; scanf will read the value from keyboard and store it in the address of age variable.
+--> if(age>=18)
+ //22>=18 true 
+--> you are eligible for vote will be print on the console screen
+--> if(age<18) //22<18 false 
+--> In this program we have used two if statements. we did not used if-else. So both conditions will execute. 

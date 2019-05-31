@@ -1,0 +1,38 @@
+#include <stdio.h>
+main()
+
+{
+   
+  int rows,columns;
+  
+printf("enter how many number of rows and columns you want?\n");
+  
+scanf("%d%d",&rows,&columns);
+  
+int a[rows][columns];
+  
+printf("insert array values..\n");
+  
+for(int i=0;i<rows;i++)
+  
+{
+       
+    for(int j=0;j<columns;j++)
+   
+   scanf("%d",&a[i][j]);
+   
+  }
+   
+  printf("2d array values are....\n");
+
+  for(int i=0;i<rows;i++)
+  
+{
+       
+    for(int j=0;j<columns;j++)
+
+      printf(" %d",a[i][j]);
+
+    printf("\n");
+  }
+}

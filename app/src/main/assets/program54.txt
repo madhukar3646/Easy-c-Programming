@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int sumof_numbers(int number);
+
+main()
+{
+
+  int n,sum=0;
+  
+printf("Enter a number \n");
+  
+scanf("%d",&n);
+  
+sum=sumof_numbers(n);
+  
+printf("sum of first %d numbers is %d",n,sum);
+
+}
+
+int sumof_numbers(int number)
+
+{
+ 
+ if(number>0)
+ 
+   return number+sumof_numbers(number-1);
+
+  else
+
+    return number;
+}

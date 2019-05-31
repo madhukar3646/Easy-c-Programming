@@ -1,0 +1,6 @@
+--> int a=10,b=20,temp=0; //intialization
+--> temp=a; // temp=10
+--> a=b;    // a=20 
+--> b=temp; // b=10
+--> now a and b variables having values 20 and 10
+--> a,b values after swap a=20, b=10

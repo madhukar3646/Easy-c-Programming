@@ -1,0 +1,23 @@
+--> int n,sum=0;
+--> Enter a number 5 ==> n=5
+--> sum=sumof_numbers(5);
+--> int sumof_numbers(int number) 
+--> if(number>0) ==> 5>0 true
+--> return 5+sumof_numbers(5-1);
+--> sumof_numbers(4);
+--> int sumof_numbers(int number) 
+--> if(number>0) ==> 4>0 true
+--> return 9+sumof_numbers(4-1);
+--> int sumof_numbers(int number) 
+--> if(number>0) ==> 3>0 true
+--> return 12+sumof_numbers(3-1);
+--> int sumof_numbers(int number) 
+--> if(number>0) ==> 2>0 true
+--> return 14+sumof_numbers(2-1);
+--> int sumof_numbers(int number) 
+--> if(number>0) ==> 1>0 true
+--> return 15+sumof_numbers(1-1);
+--> int sumof_numbers(int number) 
+--> if(number>0) ==> 0>0 false
+--> return 15;
+--> sum of first 5 numbers is 15

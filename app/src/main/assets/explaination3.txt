@@ -1,0 +1,13 @@
+--> By default sub1=0, sub2=0, sub3=0, total=0.0, avg=0.0, percentage=0.0
+--> After entering the values 98 70 55
+--> sub1=98 sub2=70 sub3=55 total=0.0 avg=0.0 percentage=0.0
+--> total=sub1+sub2; // total=98+70 
+--> total of sub1 and sub2 is 168.000000 
+--> total=sub1-sub2; // total=98-70
+--> marks difference between sub1 and sub2 is 28.000000 
+--> total=sub1+sub2+sub3; // total=98+70+55
+--> total marks of three subjects 223.000000 
+--> avg=total/3; // avg=223.000000/3
+--> average marks of three subjects 74.333336 
+--> percentage=(total/300)*100; // percentage=(223.000000/300)*100 
+--> percentage is 74.333336  

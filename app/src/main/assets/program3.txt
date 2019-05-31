@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+main()
+
+{
+    
+  int sub1,sub2,sub3;
+
+  float total,avg,percentage;
+
+  printf("enter three subject marks out of each 100 marks\n");
+
+  scanf("%d%d%d",&sub1,&sub2,&sub3);
+
+  total=sub1+sub2;
+
+  printf("total of sub1 and sub2 is %f \n", total);
+
+  total=sub1-sub2;
+
+  printf("marks difference between sub1 and sub2 is %f \n", total);
+
+  total=sub1+sub2+sub3;
+
+  printf("total marks of three subjects %f \n", total);
+
+  avg=total/3;
+
+  printf("average marks of three subjects %f \n", avg);
+
+  percentage=(total/300)*100;
+
+  printf("percentage is %f", percentage);
+
+}

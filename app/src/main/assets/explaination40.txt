@@ -1,0 +1,19 @@
+--> float a[2][3][2]={{{1.5,2.0},{3.9,4.2},{5.02,6.05}},{{7.10,8.25},{9,10},{11,12}}};
+--> A three dimensional array is a collection of two dimensional arrays.
+--> a[0][0][0]=1.5
+--> a[0][0][1]=2.0
+--> a[0][1][0]=3.9
+--> a[0][1][1]=4.2
+--> a[0][2][0]=5.02
+--> a[0][2][1]=6.05
+--> a[1][0][0]=7.10
+--> a[1][0][1]=8.25
+--> a[1][1][0]=9.0
+--> a[1][1][1]=10.0
+--> a[1][2][0]=11.0
+--> a[1][2][1]=12.0
+--> for(int i=0;i<2;i++)
+--> for(int j=0;j<3;j++)
+
+--> for(int k=0;k<2;k++)
+--> By using these three loops 3D array values will be print on the console screen.

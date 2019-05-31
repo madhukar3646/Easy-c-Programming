@@ -1,0 +1,9 @@
+enter array size below 50  
+6
+4
+6
+9
+1
+2
+8
+biggest element is 9

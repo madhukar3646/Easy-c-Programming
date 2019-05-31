@@ -1,0 +1,10 @@
+enter how many number of values you want
+5
+enter 5 values 
+1
+2
+3
+4
+5
+printing array elements...
+1 2 3 4 5

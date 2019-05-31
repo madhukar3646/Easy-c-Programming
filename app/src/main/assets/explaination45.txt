@@ -1,0 +1,19 @@
+--> str1="hello",str2=hello; //strings will be stored str1 & str2.
+--> int count=0;
+--> while(str1[0]==str2[0]) ==> 'h'=='h' true
+--> if(str1[0]=='\0'||str2[0]=='\0') ==> false
+--> count++; ==> count=1;
+--> while(str1[1]==str2[1]) ==> 'e'=='e' true
+--> if(str1[1]=='\0'||str2[1]=='\0') ==> false
+--> count++; ==> count=2;
+--> while(str1[2]==str2[2]) ==> 'l'=='l' true
+--> if(str1[2]=='\0'||str2[2]=='\0') ==> false
+--> count++; ==> count=3;
+--> while(str1[3]==str2[3]) ==> 'l'=='l' true
+--> if(str1[3]=='\0'||str2[3]=='\0') ==> false
+--> count++; ==> count=4;
+--> while(str1[4]==str2[4]) ==> 'o'=='o' true
+--> if(str1[4]=='\0'||str2[4]=='\0') ==> false
+--> if(str1[count]=='\0'||str2[count]=='\0') ==> if this condion fails true then break statement will be execute and loop will be terminate.
+--> while(str1[count]==str2[count]) ==> if this condion fails then also loop will be terminate.
+--> Finally the output of this program is Both strings are equal

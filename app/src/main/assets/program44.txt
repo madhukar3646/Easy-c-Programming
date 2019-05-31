@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include<string.h>
+
+main()
+{
+  
+  int length;
+  
+printf("enter lenght of a string \n");
+  
+scanf("%d",&length);
+  
+char str1[length];
+  printf("enter %d charecters \n",length);
+  
+for(int i=0;i<length;i++)
+  
+scanf("%s",&str1[i]);
+
+  for(int i=0;i<length;i++)
+  
+{
+
+    if(str1[i]=='c')
+
+     str1[i]='k';
+
+  }
+  
+printf("Result string is %s",str1);
+
+}

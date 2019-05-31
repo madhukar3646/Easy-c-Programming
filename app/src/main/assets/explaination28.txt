@@ -1,0 +1,22 @@
+--> int number, reversedNumber = 0, remainder,temp;
+--> Enter an interger number: 789
+--> number=789 
+--> temp = number;//temp=789
+
+--> while(number != 0) // 789!=0 true
+--> remainder = 789%10 ==> remainder=9
+--> reversedNumber = (0*10)+9 ==> reversedNumber=9 
+--> number=789/10 ==> number=78  
+
+--> while(number != 0) // 78!=0 true
+--> remainder = 78%10 ==> remainder=8
+--> reversedNumber = (9*10)+8 ==> reversedNumber=98 
+--> number=78/10 ==> number=7  
+  
+--> while(number != 0) // 7!=0 true
+--> remainder = 7%10 ==> remainder=7
+--> reversedNumber = (98*10)+7 ==> reversedNumber=987 
+--> number=7/10 ==> number=0  
+
+--> while(number != 0) // 0!=0 false
+--> Reverse of 789 Number is = 987

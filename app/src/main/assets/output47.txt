@@ -1,0 +1,2 @@
+ch1 value is c 
+b value is 115 

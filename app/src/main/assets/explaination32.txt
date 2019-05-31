@@ -1,0 +1,9 @@
+--> enter how many number of values you want ==> input 5
+--> enter 5 values ==> 1 2 3 4 5
+--> Here we have written scanf function inside the for loop.
+--> This loop will be iterate 5 times because the array length is 5.
+--> scanf will reads the value from keyboard and store the values for every indexes of the array inside loop.
+--> dynamically values will be store
+--> i=0 ==> a[0]=1
+--> i=1 ==> a[1]=2 like this up to a[4]=5 will be store.
+--> index value starting from 0 for an array.

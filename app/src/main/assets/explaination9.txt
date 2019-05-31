@@ -1,0 +1,5 @@
+--> int i=2;
+--> switch (i) //here switch(2) it will find the case with value 2 and execute that case
+--> statements will execute only under case 2 remaining statements will not execute.
+--> Under case 2 printf("Case2 "); will prints Case2 on the console screen.
+--> If there will not be available matching case then default case will execute.

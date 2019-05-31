@@ -1,0 +1,14 @@
+Enter number of elements
+5
+Enter 5 integers
+89
+5
+100
+4
+2
+Sorted list in ascending order:
+2
+4
+5
+89
+100

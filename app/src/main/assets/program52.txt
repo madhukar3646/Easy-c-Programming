@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void test();
+
+int a=10;
+
+main()
+{
+  
+int b=5;
+  
+test();
+  
+printf("global variable b is %d \n",b);
+
+}
+
+void test()
+
+{
+
+  int b=20;
+ 
+ printf("local variable b is %d \n",b);
+ 
+ printf("global variable a is %d \n",a);
+
+}

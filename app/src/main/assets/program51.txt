@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int sum(int a,int b);
+
+main()
+
+{
+  
+  int result;
+  
+result=sum(20,20);
+  
+printf("the result is %d", result);
+
+}
+
+int sum(int a,int b)
+
+{
+   
+  int c;
+   
+  c=a+b;
+   
+  return c; 
+
+}

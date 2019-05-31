@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+main()
+
+{
+    
+  int int_number;
+    
+  float float_number;
+    
+  char ch;
+    
+  char name[5]={"madhu"};
+    
+  printf("Enter an integer number\n");
+    
+  scanf("%d",&int_number);
+    
+  printf("Enter a float number \n");
+    
+  scanf("%f",&float_number);
+    
+  printf("Enter a charecter \n");
+    
+  scanf("%c",&ch);
+    
+  printf("The values of int_number=%d, float_number=%f, char=%c, name=%s",int_number,float_number,ch,name);
+
+} 

@@ -1,0 +1,36 @@
+#include <stdio.h>
+void print_numbers(int number);
+
+main()
+{
+  
+int print_upto;
+  
+printf("Enter maximum number from where you want to print \n");
+  
+scanf("%d",&print_upto);
+  
+  print_numbers(print_upto);
+
+}
+
+void print_numbers(int number)
+
+{
+   
+  if(number>0)
+ 
+ {
+
+    printf(" %d",number);
+  
+  number=number-1;
+  
+  print_numbers(number);
+ 
+ }
+ 
+ else
+
+   return;
+}

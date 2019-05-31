@@ -1,0 +1,23 @@
+--> char str1[]="darling"; 
+--> int str1_length,count=0;
+--> str1_length=strlen(str1) ==> str1_length=7
+--> char str2[str1_length];
+ ==> str2 array length also 7
+--> i=(str1_length-1)=6 ==> 6>=0 true
+--> str2[0]=str1[6] ==> str2[0]='g' ==> count++ and i--
+--> i=5 ==> 5>=0 true
+--> str2[1]=str1[5] ==> str2[1]='n' ==> count++ and i--
+--> i=4 ==> 4>=0 true
+--> str2[2]=str1[4] ==> str2[2]='i' ==> count++ and i--
+--> i=3 ==> 3>=0 true
+--> str2[3]=str1[3] ==> str2[3]='l' ==> count++ and i--
+--> i=2 ==> 2>=0 true
+--> str2[4]=str1[2] ==> str2[4]='r' ==> count++ and i--
+--> i=1 ==> 1>=0 true
+--> str2[5]=str1[1] ==> str2[5]='a' ==> count++ and i--
+--> i=0 ==> 0>=0 true
+--> str2[6]=str1[0] ==> str2[6]='d' ==> count++ and i--
+--> count=7 and i=-1 ==> -1>=0 false so loop will be terminate.
+--> str2[7]='\0';
+
+--> reversed string is gnilrad

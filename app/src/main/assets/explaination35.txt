@@ -1,0 +1,28 @@
+--> int a[50],size,biggest=0; //intializations
+--> enter array size below 50 ==> input 6 
+--> size=6;
+--> 6 input values from keyboard 4 6 9 1 2 8
+--> for(int i=0;i<size;i++) //i<6
+--> i=0 ==> if(biggest<a[0])
+
+ ==> 0<4 true 
+--> biggest=a[0]; ==> biggest=4
+--> i=1 ==> if(biggest<a[1])
+
+ ==> 4<6 true 
+--> biggest=a[1]; ==> biggest=6
+--> i=2 ==> if(biggest<a[2])
+
+ ==> 6<9 true 
+--> biggest=a[2]; ==> biggest=9
+--> i=3 ==> if(biggest<a[3])
+
+ ==> 9<1 false
+--> i=4 ==> if(biggest<a[4])
+
+ ==> 9<2 false
+--> i=5 ==> if(biggest<a[5])
+
+ ==> 9<8 false
+--> i=6 ==> i<size ==> 6<6 false so loop will be terminate
+--> biggest element is 9 is the output

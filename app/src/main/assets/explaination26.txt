@@ -1,0 +1,30 @@
+--> 153 = 1*1*1 + 5*5*5 + 3*3*3  // 153 is an Armstrong number. 
+--> int number, temp, remainder, result = 0;
+ //variable declaration and result=0 initialization
+--> Enter a three digit integer: 153
+--> number=153 
+--> temp = number;//temp=153
+
+--> while (temp != 0) // 153!=0 true 
+--> remainder = 153%10  ==> remainder=3
+--> result = 0+(3*3*3) ==> result=27
+    
+--> temp=temp/10;
+ // temp=153/10 // temp=15
+
+--> while (temp != 0) // 15!=0 true
+--> remainder = 15%10;==> remainder=5
+--> result = 27+(5*5*5) ==> result=152
+
+--> temp=temp/10;
+ // temp=15/10 // temp=1
+
+--> while (temp != 0) // 1!=0 true
+--> remainder = 1%10;==> remainder=1
+--> result = 152+(1*1*1) ==> result=153
+--> temp=temp/10;
+ // temp=1/10 // temp=0
+
+--> while (temp != 0) // 0!=0 false
+--> if(result == number) // 153==153 true
+--> 153 is an Armstrong number.

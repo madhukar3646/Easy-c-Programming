@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Easy C Programming</string>
+    <string name="search_hint">Search your program</string>
+
+    // test ads
+      <string name="app_id">""</string>
+      <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+      <string name="interstitial_Ad_id_entry">ca-app-pub-3940256099942544/1033173712</string>
+      <string name="interstitial_explaination_ad">ca-app-pub-3940256099942544/1033173712</string>
+
+    //live ads
+   <!-- <string name="app_id">ca-app-pub-2925546892673968~3499222467</string>
+    <string name="banner_ad_id">ca-app-pub-2925546892673968/5920359913</string>
+    <string name="interstitial_Ad_id_entry">ca-app-pub-2925546892673968/1587374995</string>
+    <string name="interstitial_explaination_ad">ca-app-pub-2925546892673968/1084155570</string>-->
+
+</resources>

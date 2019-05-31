@@ -1,0 +1,6 @@
+--> By using arrays we can store more than one values using only one variable.
+--> Array is a fixed indexed collection of homogeneous elements with a fixed size.
+--> we can't increase the size and decrease the size after the intialization.
+--> int a[]={10,11,12,13,14}; // declaration of an array. array length is 5.
+--> We can retrieve elements using index value like a[0] will give value 10.
+--> a[index]==> a[0]=10;

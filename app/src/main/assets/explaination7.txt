@@ -1,0 +1,8 @@
+--> By default variable values a=0,b=0,c=0;
+--> After giving inputs values will be a=8,b=9,c=10;
+--> if((a==b) && (b==c) && (c==a)) // if((8==9) && (9==10) && (10==8)) // false && false && false so condition false
+--> control flow will go to else if block
+--> if((a>=b) && (a>=c)) // if((8>=9) && (8>=10)) // false && false // condition false so control flow will go to else block
+--> else if((b>=a) && (b>=c)) // ((9>=8) && (9>=10)) // true && false // condition false so control flow will go to else block
+--> finally else block will execute.
+--> else block printf will prints biggest is 10 

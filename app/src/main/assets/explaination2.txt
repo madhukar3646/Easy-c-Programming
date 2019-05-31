@@ -1,0 +1,6 @@
+--> Memory locations will be create with variable names int_number,float_number and ch;
+--> scanf function will read the user inputs from keyboard.
+--> name variable will be stored with group of charecters or string value "madhu"
+--> if the user will enter the integer value that will be stored in the variable int_number
+--> if the user will enter the float value that will be stored in the variable float_number
+--> like that charecter value will be stored in ch

@@ -1,0 +1,7 @@
+--> By default variable values a=0,b=0,c=0;
+--> After giving inputs values will be a=6,b=5,c=8;
+--> if((a==b) && (b==c) && (c==a)) // if((6==5) && (5==8) && (8==6)) // false && false && false so condition false
+--> control flow will go to else if block
+--> if((a<=b) && (a<=c)) // if((6<=5) && (6<=8)) // false && true // condition false so control flow will go to else block
+--> else if((b<=a) && (b<=c)) // ((5<=6) && (5<=8)) // true && true // condition true so this true block will exceute
+--> printf will prints the message with smallest is 5

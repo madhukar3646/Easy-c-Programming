@@ -1,0 +1,15 @@
+--> A function is collection of statements. 
+--> syntax is returntype f-name(){ }
+--> ex: int sum(){ } or void sum(){ } etc.
+--> void means there is no retun type.
+--> We need to call methods from main() method only.
+--> call a method example sum(); ==> functionname();
+
+--> 
+void sum(); ==> it is a function prototype.
+--> Need to declare function prototype to use userdefined functions.
+--> Here void sum() is a method written below the main method.
+--> sum(); this statement in main method will be execute the sum() method or function.
+--> Then all the instructions inside void sum() method will be execute.
+--> sum of a,b is 30 will be print then control will go back to main method.
+--> After completing the void sum() method instructions control will goes to the main method and remaining staements will be execute.

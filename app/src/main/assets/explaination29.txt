@@ -1,0 +1,10 @@
+--> A reverse of a number is equals to that given number is called as pollindrome number.
+--> Example 121 is a number reverse of 121 is also 121. So 121 is a pollindrome number.
+--> 789 is a number but reverse of 789 is 987. 789!=987 so it is not a pollindrome.
+--> To check a number is pollindrome or not we need to find reverse of a number.
+--> In the above program we have used reverse of a number logic and added one extra condition if(reversedNumber==temp).  
+--> After that we need to compare the output with given number.
+--> If both are same then we can call it as pollindrome otherwise not a pollindrome.  
+--> temp = number;//temp=121 copied given number in temp variable
+--> if(reversedNumber==temp) //this is the comparision condition.
+--> 121 number is pollindrome 

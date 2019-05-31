@@ -1,0 +1,9 @@
+--> 
+void sum(int c,int d); ==> it is a function prototype.
+--> Here 
+void sum(int c,int d) is a method written below the main method.
+--> void sum(int c,int d) ==> This function is expecting two integer values.
+--> sum(10,20); ==> function call with 10 and 20 integer values.
+--> void sum(int c,int d) ==> 10 will be store in c and 20 will be store in d
+--> result=c+d ==> result=10+20;
+--> output is: sum of c,d is 30 

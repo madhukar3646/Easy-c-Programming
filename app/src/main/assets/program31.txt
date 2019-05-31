@@ -1,0 +1,20 @@
+#include <stdio.h>
+main()
+
+{
+  
+  int a[]={10,11,12,13,14};
+  printf("Replace value 12 with 15 in array\n");
+  for(int i=0;i<5;i++)
+  {
+       
+    if(a[i]==12)
+
+      a[i]=15;
+  }
+
+  printf("Updated array values are...\n");
+  for(int i=0;i<5;i++)
+ 
+   printf(" %d",a[i]);
+}

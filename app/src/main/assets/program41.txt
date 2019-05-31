@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+
+{
+  
+  char str1[]="how are you";
+  
+char str2[]={'h','o','w','a','r','e','y','o','u','\0'};
+  
+printf("%s \n",str1);
+  
+printf("%s \n",str2);
+  printf("length of the str1 is %d \n",strlen(str1));
+  
+printf("length of the str2 is %d",strlen(str2));
+
+}

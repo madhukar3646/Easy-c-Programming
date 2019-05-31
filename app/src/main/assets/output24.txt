@@ -1,0 +1,9 @@
+ceil value of 4.6 is 5.000000
+ceil value of 4.3 is 5.000000
+floor value of 4.6 is 4.000000
+floor value of 4.2 is 4.000000
+square root of 16 is 4.000000
+square root of 2 is 1.414214
+2 to the power of 4 is 16.000000
+3 to the power of 3 is 27.000000
+absolute value of -12 is 12

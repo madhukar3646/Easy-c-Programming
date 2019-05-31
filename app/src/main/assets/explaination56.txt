@@ -1,0 +1,4 @@
+--> continue; ==> This statement will skip the current iteration of the loop.
+--> at i=5 ==> if(i==5) ==> 5==5 true
+--> true block statement continue; will be execute and skip the current iteration of the loop.
+--> 0 1 2 3 4 6 7 8 9 ==> here 5 is skipped.

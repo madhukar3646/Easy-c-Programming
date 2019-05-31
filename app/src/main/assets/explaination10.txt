@@ -1,0 +1,10 @@
+--> scanf("%c",&ch); //ch='a';
+--> if((ch>='A' && ch<='Z') || (ch>='a' && ch<='z')) //ascci codes comparision will check and condition will be true
+--> switch(ch)
+  //ch is 'a'
+--> case 'a':
+   // this is the matching case. From this case all the statements will be execute until the break statement.
+  
+--> there is no break statement after case 'a': so case e,i,o,u after that printf will be execute. Then break statement will be execute.
+--> If there will not be available matching case then default case will execute.
+--> printf("%c is not an alphabet.\n",ch); //this else block will be execute for non alphabets.

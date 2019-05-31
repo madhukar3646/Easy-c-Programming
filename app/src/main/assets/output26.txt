@@ -1,0 +1,2 @@
+Enter a three digit integer: 153
+153 is an Armstrong number.

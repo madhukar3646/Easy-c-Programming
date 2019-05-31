@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+main()
+{
+  
+  int a[50],size,smallest=0;
+  printf("enter array size below 50  \n");
+  scanf("%d",&size);
+  for(int i=0;i<size;i++)
+  scanf("%d",&a[i]);
+  smallest=a[0];
+  
+for(int i=0;i<size;i++)
+  {
+       
+     if(smallest>a[i])
+
+       smallest=a[i];
+
+  }
+  printf("smallest element is %d", smallest);
+}

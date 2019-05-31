@@ -1,0 +1,5 @@
+enter first string
+hello
+enter second string
+HELLO
+Strings are not equal

@@ -1,0 +1,14 @@
+--> int a[5]={1,2,3,4,5},sum=0; //intializations
+--> enter 5 values ==> 1 2 3 4 5
+--> i=0 ==> sum=sum+a[0];
+ ==> sum=0+1 ==> sum=1
+--> i=1 ==> sum=sum+a[1];
+ ==> sum=1+2 ==> sum=3
+--> i=2 ==> sum=sum+a[2];
+ ==> sum=3+3 ==> sum=6
+--> i=3 ==> sum=sum+a[3];
+ ==> sum=6+4 ==> sum=10
+--> i=4 ==> sum=sum+a[4];
+ ==> sum=10+5 ==> sum=15
+--> i=5 ==> i<5 ==> 5<5 false so loop will be terminate.
+--> output is sum=15

@@ -1,0 +1,9 @@
+enter three subject marks out of each 100 marks
+98
+70
+55
+total of sub1 and sub2 is 168.000000 
+marks difference between sub1 and sub2 is 28.000000 
+total marks of three subjects 223.000000 
+average marks of three subjects 74.333336 
+percentage is 74.333336

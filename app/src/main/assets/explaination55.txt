@@ -1,0 +1,5 @@
+--> break; ==> This statement will terminate the loop.
+--> up to i=8 ==> 0 1 2 3 4 5 6 7 8 these values will be print
+--> at i=9 ==> if(i>8) ==> 9>8 true
+--> true block statement break; will be execute and terminate the loop.
+

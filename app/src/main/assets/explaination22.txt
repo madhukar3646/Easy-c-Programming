@@ -1,0 +1,19 @@
+--> Prime number means a number that is divisible only by itself and 1 (e.g. 2, 3, 5, 7, 11).
+--> int n, i, flag = 0; //declaration and flag variable intialization to 0.
+--> Enter a number 6 then n=6
+-->  for(i = 2; i <= n/2; ++i)
+--> if(n%i == 0) // condition for checking the number is divisible or not with i values
+--> here n=6 and i value will be change for loop iterations.
+--> i=2 ==> i<6/2 ==> 2<3 true 
+--> true block if(n%i == 0) ==> 6%2==0 ==> true then 
+--> flag = 1; // flag varibale is assigned with 1
+--> break;    // this will terminate the loop
+--> if (n == 1) // 4==1 false so else block will be execute
+--> if (flag == 0) // false so else block printf will be execute
+--> 6 is not a prime number.
+
+Note: 
+--> In the above program if(n%i == 0) condition will be false for every iteration for prime numbers like 2,3,5,7..etc.
+--> here we have started for loop from i=2 because we are checking the values except 1 and itself of a number.
+--> if any number will be divisible except 1 and itself then it will be a prime.
+--> But 1 is neither a prime nor a composite number.

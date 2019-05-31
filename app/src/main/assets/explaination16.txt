@@ -1,0 +1,12 @@
+--> num=24
+--> if(num%i==0) // if it is true then i value will be a factor.
+--> i=1 1<=24 ==> 24%1==0 true  i++ ==> i=2
+--> i=2 2<=24 ==> 24%2==0 true  i++ ==> i=3
+--> i=3 3<=24 ==> 24%3==0 true  i++ ==> i=4
+--> i=4 4<=24 ==> 24%4==0 true  i++ ==> i=5
+--> i=5 5<=24 ==> 24%5==0 false i++ ==> i=6
+--> i=6 6<=24 ==> 24%6==0 true  i++ ==> i=7
+--> like this iterations will execute
+--> i=24 24<=24 ==> 24%24==0 true i++ ==> i=25
+--> at interation i=25 ==> 25<=24 false ==> loop completed
+--> factors of 24 are 1 2 3 4 6 8 12 24

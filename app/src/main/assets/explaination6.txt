@@ -1,0 +1,6 @@
+--> int number; //number value by default 0. nuber=0;
+--> 11 is the input value.
+--> scanf("%d",&number);
+ //number=11; 11 will be stored in the variable number.
+--> if(number%2==0) // 11%2 is 1(remainder), 1==0 is false
+--> else block will execute and printf will print given number is odd.

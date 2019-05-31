@@ -1,0 +1,2 @@
+Enter an interger number: 121
+121 number is pollindrome

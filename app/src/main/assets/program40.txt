@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+main()
+{
+   
+  float a[2][3][2]={{{1.5,2.0},{3.9,4.2},{5.02,6.05}},{{7.10,8.25},{9,10},{11,12}}};
+  
+printf("3D Array values are....\n");
+ 
+ for(int i=0;i<2;i++)
+ 
+ {
+       
+    for(int j=0;j<3;j++)
+
+    {
+           
+      for(int k=0;k<2;k++)
+
+        printf("%f\n",a[i][j][k]);
+
+    }
+
+  }
+
+}

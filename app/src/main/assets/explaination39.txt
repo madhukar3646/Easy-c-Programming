@@ -1,0 +1,6 @@
+--> int rows,columns; 
+--> enter how many number of rows and columns you want? 3 2
+--> rows=3, columns=2;
+--> int a[rows][columns]; array will be declared with given row and column sizes
+--> scanf will be read the values from the keyboard and store with in the array using row and column indexes in side loops.
+--> printf function will be execute inside the array printing loop same like other programs as above.

@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int sum();
+
+main()
+{
+  
+  int result;
+  result=sum();
+  
+printf("the result is %d", result);
+
+}
+
+int sum()
+
+{
+    
+  int a,b,c;
+
+  a=10;
+
+  b=20;
+
+  c=a+b;
+
+  return c;
+
+}

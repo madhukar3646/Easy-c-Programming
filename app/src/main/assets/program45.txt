@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+main()
+{
+  
+  char str1[100],str2[100];
+  
+int count=0;
+  
+printf("enter first string\n");
+  
+gets(str1);
+  
+printf("enter second string\n");
+  
+gets(str2);
+ 
+ while(str1[count]==str2[count])
+ 
+ {
+      
+    if(str1[count]=='\0'||str2[count]=='\0')
+
+      break;
+
+    count++;
+
+  }
+  
+if(str1[count]=='\0' && str2[count]=='\0')
+
+    printf("Both strings are equal\n");
+  
+else
+
+    printf("Strings are not equal\n");
+
+}

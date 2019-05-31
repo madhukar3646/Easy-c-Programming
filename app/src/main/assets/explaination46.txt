@@ -1,0 +1,5 @@
+--> In this program we have used strcmp predefined function.
+--> This method will take two string parameters.
+--> It will return value 0 or 1.
+--> If this function will return 0 then Both strings are equal
+--> Otherwise both are not equal.

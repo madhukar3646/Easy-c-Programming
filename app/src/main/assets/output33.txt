@@ -1,0 +1,1 @@
+sum of array elements is 15

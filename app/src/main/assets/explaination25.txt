@@ -1,0 +1,13 @@
+--> The Fibonacci sequence is a series where the next term is the sum of pervious two terms. 
+--> The first two terms of the Fibonacci sequence is 0 followed by 1.
+--> So initially first two terms term1=0 and term2=1  
+--> Enter the number of terms: 5
+--> n=5 
+--> term1=0
+--> i=1 ==> nextTerm=1 ==> term1=1 ==> term2=1
+--> i=2 ==> nextTerm=2 ==> term1=1 ==> term2=2
+--> i=3 ==> nextTerm=3 ==> term1=2 ==> term2=3
+--> i=4 ==> nextTerm=5 ==> term1=3 ==> term2=5
+--> i=5 ==> nextTerm=8 ==> term1=5 ==> term2=8
+--> At iteration 5 term1 value will be 5 but here we are printing term1 values before updating.
+

@@ -1,0 +1,25 @@
+--> enter lenght of a string 8
+--> length=8
+--> char str1[8];
+--> str1="coocking";
+--> i=0 ==> i<length ==> 0<8 true
+--> if(str1[0]=='c') ==> ('c'=='c') true
+--> str1[0]='k' ==> true block. ==> i++
+--> i=1 ==> i<length ==> 1<8 true
+--> if(str1[1]=='c') ==> ('o'=='c') false i++;
+--> i=2 ==> i<length ==> 2<8 true
+--> if(str1[2]=='c') ==> ('o'=='c') false i++;
+--> i=3 ==> i<length ==> 3<8 true
+--> if(str1[3]=='c') ==> ('c'=='c') true
+--> str1[3]='k' ==> true block. ==> i++
+--> i=4 ==> i<length ==> 4<8 true
+--> if(str1[4]=='c') ==> ('k'=='c') false i++;
+--> i=5 ==> i<length ==> 5<8 true
+--> if(str1[5]=='c') ==> ('i'=='c') false i++;
+--> i=6 ==> i<length ==> 6<8 true
+--> if(str1[6]=='c') ==> ('n'=='c') false i++;
+--> i=7 ==> i<length ==> 7<8 true
+--> if(str1[7]=='c') ==> ('g'=='c') false i++;
+--> i=8 ==> i<length ==> i<8 false 
+--> loop will be terminate
+--> Result string is kookking

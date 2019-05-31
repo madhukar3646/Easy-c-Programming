@@ -1,0 +1,15 @@
+--> Here for(int i=1; i<4;i++)
+ is outer loop and for(int j=1;j<4;j++) is inner loop
+--> Inner loop will be execute for each iteration of the outerloop.
+--> i=1 ==> i<4 true 
+--> j=1 ==> j<4 true ==> 1 ==> j++ ==> j=2  
+--> j=2 ==> j<4 true ==> 2 ==> j++ ==> j=3 
+--> j=3 ==> j<4 true ==> 3 ==> j++ ==> j=4  
+--> j=4 ==> j<4 false==> printf("\n"); will be execute
+--> Untill here j values 1 2 3 will be print on the screen and \n means cursor will move to the next line.
+--> i=1 ==> 1 2 3 and \n ==> i++ ==> i=2
+--> i=2 ==> i<4 true  
+--> i=2 ==> 1 2 3 and \n ==> i++ ==> i=3 
+--> i=3 ==> i<4 true
+--> i=3 ==> 1 2 3 and \n ==> i++ ==> i=4
+--> i=4 ==> i<4 false // outer loop will be complete at i=4 

@@ -1,0 +1,3 @@
+Enter your age
+22
+you are eligible for vote

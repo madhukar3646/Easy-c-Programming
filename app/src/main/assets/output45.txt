@@ -1,0 +1,5 @@
+enter first string
+hello
+enter second string
+hello
+Both strings are equal

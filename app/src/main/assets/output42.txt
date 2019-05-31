@@ -1,0 +1,2 @@
+Result of string is how are you 
+Result of string using predefined method is how are you

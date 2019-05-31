@@ -1,0 +1,7 @@
+Enter an integer number
+10
+Enter a float number 
+1.2
+Enter a charecter
+k 
+The values of int_number=10, float_number=1.200000, char=k, name=madhu

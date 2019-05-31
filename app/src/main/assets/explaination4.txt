@@ -1,0 +1,8 @@
+--> int radius,area; // memory locations will create with the variable names radius and area
+--> By default radius=0, area=0;
+--> input value will store at address of radius variable
+--> radius=8; 
+--> area=3.14*radius*radius; //area=pi*r*r is the formulae of area of a circle.pi=3.14
+--> arithmetic calculation will be done on the leftside of the assignment operator(=);
+--> That calculated result will be stored in the variable area.
+--> Finally the oputput will be Area of the circle is 200

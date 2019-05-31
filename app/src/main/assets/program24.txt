@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include<math.h>
+
+main()
+{
+   
+  printf("\n ceil value of 4.6 is %f",ceil(4.6));
+  printf("\n ceil value of 4.3 is %f",ceil(4.3));
+  printf("\n floor value of 4.6 is %f",floor(4.6));
+  printf("\n floor value of 4.2 is %f",floor(4.2));
+  printf("\n square root of 16 is %f",sqrt(16));
+  printf("\n square root of 2 is %f",sqrt(2));
+  printf("\n 2 to the power of 4 is %f",pow(2,4));
+  printf("\n 3 to the power of 3 is %f",pow(3,3));
+  printf("\n absolute value of -12 is %d",abs(-12));
+
+}

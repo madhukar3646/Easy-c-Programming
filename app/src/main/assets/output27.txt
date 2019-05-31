@@ -1,0 +1,2 @@
+Enter an integer: 1634
+1634 is an Armstrong number.

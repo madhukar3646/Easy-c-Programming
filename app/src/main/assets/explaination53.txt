@@ -1,0 +1,36 @@
+--> A function calls it self of a function is called Recursion.
+--> Enter maximum number from where you want to print 5
+--> print_upto=5;
+--> print_numbers(5);
+--> 
+void print_numbers(int number) ==> number=5 will be stored
+--> if(number>0) ==> 5>0 true
+--> printf(" %d",number); ==> 5
+--> number=number-1; ==> number=5-1 ==> number=4
+--> print_numbers(4); ==> again function will be call with input 4.
+--> 
+void print_numbers(int number) ==> number=4 will be stored
+--> if(number>0) ==> 4>0 true
+--> printf(" %d",number); ==> 4
+--> number=number-1; ==> number=4-1 ==> number=3
+--> print_numbers(3); ==> again function will be call with input 3.
+--> 
+void print_numbers(int number) ==> number=3 will be stored
+--> if(number>0) ==> 3>0 true
+--> printf(" %d",number); ==> 3
+--> number=number-1; ==> number=3-1 ==> number=2
+--> print_numbers(2); ==> again function will be call with input 2.
+--> 
+void print_numbers(int number) ==> number=2 will be stored
+--> if(number>0) ==> 2>0 true
+--> printf(" %d",number); ==> 2
+--> number=number-1; ==> number=2-1 ==> number=1
+--> print_numbers(1); ==> again function will be call with input 1.
+--> 
+void print_numbers(int number) ==> number=1 will be stored
+--> if(number>0) ==> 1>0 true
+--> printf(" %d",number); ==> 1
+--> number=number-1; ==> number=1-1 ==> number=0
+--> print_numbers(0); ==> again function will be call with input 0.
+--> if(number>0) ==> 0>0 false so else block will be execute.
+--> return; ==> it will terminate the method execution.

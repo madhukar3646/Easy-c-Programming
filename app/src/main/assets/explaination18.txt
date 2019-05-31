@@ -1,0 +1,13 @@
+--> int i=0;//intialization
+--> while(i<=10) // condition while(condition) if it is true then the statements under while block will be execute.
+--> i++; //the last statement in while loop block. After this increamentation again while(i<=10) condition will be execute. 
+--> loop will be terminate at false condition. 
+--> num=2
+--> num*i // this is the logic num=2 // 2*i // i value will be change for every iteration of the loop.
+--> i=1 1<=10 ==> 2*1=2  i++ ==> i=2
+--> i=2 2<=10 ==> 2*2=4  i++ ==> i=3
+--> i=3 3<=10 ==> 2*3=6  i++ ==> i=4
+--> i=4 4<=10 ==> 2*4=8  i++ ==> i=5
+--> like this iterations will execute
+--> i=10 10<=10==> 2*10=20 i++ ==> i=11
+--> at interation i=11 ==> 11<=10 false
