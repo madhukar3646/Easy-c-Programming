@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -20,6 +21,7 @@ import com.app.cprogramingapp.Utils.Utils;
 import com.app.cprogramingapp.adapters.AppsParkAdsAdapter;
 import com.app.cprogramingapp.models.App;
 import com.app.cprogramingapp.models.PlaystoreappslistingResponse;
+import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -64,6 +66,8 @@ public class ExplainationActivity extends AppCompatActivity implements AppsParkA
         dialog = new Dialog(this,
                 android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
         dialog.setContentView(R.layout.servicecall_loading);
+        ImageView iv_loader=(ImageView)dialog.findViewById(R.id.iv_loader);
+        Glide.with(getApplicationContext()).load(R.drawable.loading_icon).placeholder(R.drawable.loading_icon).error(R.drawable.loading_icon).into(iv_loader);
         dialog.setCancelable(false);
 
         more_apps_lay_out=(RelativeLayout)findViewById(R.id.more_apps_lay_out);

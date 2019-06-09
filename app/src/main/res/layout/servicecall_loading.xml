@@ -5,12 +5,18 @@
     android:background="@android:color/transparent"
     android:gravity="center"
     >
-    <ProgressBar
-        android:indeterminate="true"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:indeterminateDrawable="@drawable/custom_loader"
-        />
+        android:background="@android:drawable/screen_background_dark_transparent">
+    <ImageView
+        android:id="@+id/iv_loader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading_icon"/>
+    </RelativeLayout>
+
 </RelativeLayout>

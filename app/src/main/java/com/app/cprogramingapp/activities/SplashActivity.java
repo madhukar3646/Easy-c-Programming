@@ -87,6 +87,7 @@ public class SplashActivity extends AppCompatActivity {
     private void ads_success_intent() {
         this.check_intent = false;
         startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 
     private void ad_failed_intent() {

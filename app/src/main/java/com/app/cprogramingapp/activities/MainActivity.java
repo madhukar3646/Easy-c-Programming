@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -31,6 +32,7 @@ import com.app.cprogramingapp.adapters.TitlesListAdapter;
 import com.app.cprogramingapp.models.App;
 import com.app.cprogramingapp.models.PlaystoreappslistingResponse;
 import com.app.cprogramingapp.models.TitlesModel;
+import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.gson.Gson;
@@ -84,6 +86,8 @@ public class MainActivity extends AppCompatActivity implements TitlesListAdapter
         dialog = new Dialog(this,
                 android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
         dialog.setContentView(R.layout.servicecall_loading);
+        ImageView iv_loader=(ImageView)dialog.findViewById(R.id.iv_loader);
+        Glide.with(getApplicationContext()).load(R.drawable.loading_icon).placeholder(R.drawable.loading_icon).error(R.drawable.loading_icon).into(iv_loader);
         dialog.setCancelable(false);
 
         more_apps_lay_out=(RelativeLayout)findViewById(R.id.more_apps_lay_out);

@@ -9,6 +9,7 @@
 
     <application
         android:name=".Utils.MyApplication"
+        android:appComponentFactory="whateverString"
         android:allowBackup="false"
         android:debuggable="false"
         android:icon="@drawable/appicon"
@@ -16,7 +17,9 @@
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="HardcodedDebugMode">
+        tools:ignore="HardcodedDebugMode"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
         <activity
             android:name=".activities.SplashActivity"
             android:screenOrientation="portrait">
